@@ -28,6 +28,12 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground">
               © {new Date().getFullYear()} Divansab Harkuni. All rights reserved.
             </p>
+            <p
+              className="text-xs text-muted-foreground/60 mt-1"
+              title={`Built ${new Date(__BUILD_DATE__).toLocaleString()}`}
+            >
+              v{__APP_VERSION__} · {__COMMIT_HASH__}
+            </p>
           </div>
 
           {/* Credit */}
